@@ -28,6 +28,8 @@ provider:
   environment:
     API_GATEWAY_LAMBDA_EXEC_ROLE: api-gateway-lambda-exec-role
     AWS_ACCOUNT_ID: 917291829364
+    DOMAIN: supadhyaya.auth0.com
+    ACCESS_TOKEN_SECRET: 4EvDSwKK7i48_iJK53lkZc0R-qyBr2Bmxd7eVlHm8qfmZF5QgLEdZU5Ailm8y9xw
 
   role: "arn:aws:iam::${self:provider.environment.AWS_ACCOUNT_ID}:role/${self:provider.environment.API_GATEWAY_LAMBDA_EXEC_ROLE}"
 
